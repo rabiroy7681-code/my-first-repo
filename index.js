@@ -1,16 +1,19 @@
 require('dotenv').config()
+import {} from 'rea'
 console.log("Chai aur code")
 
 const express = require('express')
 const app = express()
 // const port = 3000
 
+const ab = `<h1>Welcome Jhilik Maji 💝</h1> </br> <button> Click Me Jhilu </button>`
+
 app.get('/', (req, res) => {
-  res.send('Hello World!. It\'s a Home Page.... ')
+  res.send(ab)
 })
 
 app.get('/facebook', (req, res)=>{
-  res.send("<h2> You are on <h1>Facebook</h1> Page </h2>")
+  res.send("You are in Facebook")
 })
 app.get('/linkdine', (req, res)=>{
   res.send("<h1>You are on Linkdine Page</h1>")
