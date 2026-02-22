@@ -1,5 +1,5 @@
 require('dotenv').config()
-import {} from 'rea'
+
 console.log("Chai aur code")
 
 const express = require('express')
